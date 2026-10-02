@@ -1,0 +1,58 @@
+{
+    "author": {
+        "email": "hello@nativeship.io",
+        "name": "Administrator"
+    },
+    "description": "Manyreach helps teams run cold email campaigns and manage leads, inboxes, and replies",
+    "devDependencies": {
+        "@n8n/node-cli": "0.41.2",
+        "@types/node": "22.15.29",
+        "eslint": "9.29.0",
+        "prettier": "3.6.2",
+        "typescript": "5.9.3"
+    },
+    "engines": {
+        "node": "\u003e=22.22.0"
+    },
+    "files": [
+        "dist"
+    ],
+    "homepage": "https://api.manyreach.com",
+    "keywords": [
+        "n8n-community-node-package",
+        "manyreach",
+        "manyreach-n8n-node",
+        "n8n-nodes",
+        "nativeship-n8n-nodes",
+        "nativeship-nodes",
+        "cold-outreach-tool",
+        "n8n",
+        "email-campaigns",
+        "lead-generation"
+    ],
+    "license": "MIT",
+    "n8n": {
+        "credentials": [
+            "dist/credentials/ManyreachApi.credentials.js"
+        ],
+        "n8nNodesApiVersion": 1,
+        "nodes": [
+            "dist/nodes/Manyreach/Manyreach.node.js"
+        ],
+        "strict": true
+    },
+    "name": "@nativeship/n8n-nodes-manyreach",
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix"
+    },
+    "version": "1.0.0"
+}

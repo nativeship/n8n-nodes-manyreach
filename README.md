@@ -1,0 +1,351 @@
+# ManyReach n8n community node
+
+Manyreach helps teams run cold email campaigns and manage leads, inboxes, and replies
+
+Generated from OpenAPI 2.10.0 with template 1.1.0. Generated files are platform-managed and will be overwritten during regeneration.
+
+## Authentication
+
+Configure the generated API key credential in n8n before using the node.
+
+## Supported operations
+
+- `GET /api/v2/account` - Get account
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/account/credits` - Get sending credit
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/account/data-tokens` - Get data token
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/blacklist/domains` - Add domains to blacklist
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/blacklist/emails` - Add emails to blacklist
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/blacklist/domains/check` - Check whether a domain is blacklisted
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/blacklist/emails/check` - Check whether an email is blacklisted
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/blacklist/domains/{id}` - Remove domain from blacklist
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/blacklist/emails/{id}` - Remove email from blacklist
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/blacklist/domains` - List blacklisted domains
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/blacklist/emails` - List blacklisted email addresses
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/tags` - Add a single tag to a campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/archive` - Archive a campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/copy` - Copy campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns` - Create campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/sequences` - Create campaign sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/campaigns/{id}` - Delete campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns/{id}` - Get campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns/{id}/prospects/{prospectId}` - Get campaign prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns/{id}/prospects` - List campaign prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns/{id}/sequences` - List campaign sequences
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns/{id}/stats` - Get campaign statistics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/campaigns` - List campaigns
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/pause` - Pause a campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/campaigns/{id}/tags/{tagId}` - Remove a specific tag from a campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/campaigns/{id}/prospects/{prospectId}` - Remove prospect from campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/start` - Start a campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/campaigns/{id}/unarchive` - Restore an archived campaign to draft.
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/campaigns/{id}` - Update campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/campaigns/{id}/prospects/{prospectId}` - Partially update campaign prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/clientspaces/{id}/credits` - Allocate clientspace credits
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/clientspaces` - Create a clientspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/clientspaces/{id}` - Delete a clientspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/clientspaces` - List clientspaces
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/clientspaces/{id}` - Get clientspace by ID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/clientspaces/{id}/credits` - Get clientspace credits
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/clientspaces/{id}` - Update clientspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/followups/{id}` - Delete follow-up
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/followups/{id}` - Get follow-up by ID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/followups/{id}` - Update follow-up
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/lists` - Creates a new mailing list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/lists/{id}` - Deletes a list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/lists/{id}` - Retrieves a specific mailing list by ID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/lists` - Retrieves all mailing lists
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/lists/{id}/prospects/{prospectId}` - Remove a specific prospect from a list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/lists/{id}` - Updates an existing mailing list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/messages` - Retrieve messages by type
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/messages/reply` - Reply to message
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/orders/{id}/items/{itemId}/nameservers` - Allocate nameserver hostnames
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/orders` - Get or create draft order
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/orders/{id}/checkout` - Checkout order
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/orders/{id}/items` - Add order item
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/orders/{id}/items/{itemId}` - Delete order item
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/orders/draft` - Get draft order
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/orders/{id}` - Get order by id
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/orders/{id}/items/{itemId}` - Get order item by id
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/orders/{id}/items` - List order items
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/orders` - List orders
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/orders/{id}` - Update order
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/orders/{id}/items/{itemId}` - Update order item
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/orders/{id}/items/{itemId}/nameservers/verify` - Verify nameserver records
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/prospects/{id}/tags` - Add a single tag to a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/prospects/bulk` - Bulk add prospects to a list or campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/prospects` - Creates a new prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/prospects/{id}` - Deletes a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/prospects/{id}` - Get prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/prospects/{id}/messages` - Get message history for a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/prospects/{id}/tags` - Get all tags for a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/prospects` - List prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/prospects/{id}/tags/{tagId}` - Remove a specific tag from a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/prospects/{id}` - Partially updates a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/senders/{id}/tags` - Add a single tag to a sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/senders` - Creates a sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/senders/{id}` - Delete Sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/senders/{id}` - Gets sender by ID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/senders` - Retrieves organization senders
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/senders/{id}/errors` - Get all errors by senderID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/senders/{id}/tags/{tagId}` - Remove a specific tag from a sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/senders/{id}` - Update Sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/sequences/{id}/followups` - Creates a new follow-up in a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/sequences/{id}` - Deletes sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/sequences/{id}/followups` - Retrieves all follow-ups for a specific sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/sequences/{id}` - Patch sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/tags` - Creates a new tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/tags/{id}` - Deletes a tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/tags/{id}` - Gets a single tag by ID
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/tags/{id}/campaigns` - Gets all campaigns that have this tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/tags/{id}/prospects` - Gets all prospects that have this tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/tags/{id}/senders` - Gets all senders that have this tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/tags` - List tags
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/tags/{id}` - Updates an existing tag's title and description
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/users` - Create new user
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/users/{id}` - Delete user
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/users/{id}` - Get user by id
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/users` - Get all users
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/users/{id}` - Update user
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/validation/batches/{batchId}` - Get validation batch status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/validation/emails` - Validate emails
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/whitelabel` - Update whitelabel settings
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/workspaces/{id}/credits` - Allocate workspace credits
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /api/v2/workspaces` - Create a new workspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /api/v2/workspaces/{id}` - Delete a workspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/workspaces` - List workspaces
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/workspaces/{id}` - Get workspace
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /api/v2/workspaces/{id}/credits` - Get workspace credits
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /api/v2/workspaces/{id}` - Update workspace
+  - Retry Contract: none
+  - Pagination Contract: none
+
+## Usage
+
+1. Install this community-node package in n8n.
+2. Add the **ManyReach** node to a workflow.
+3. Select a resource and operation, configure its parameters, and execute the workflow.
+
+## Example workflow
+
+Connect **Manual Trigger** -> **ManyReach** -> a destination node, select an operation, then run the workflow and inspect the returned items.
+
+## Development
+
+```sh
+npm install
+npm run build
+npm run lint
+npm run dev
+```
+
+`npm run dev` starts a local n8n development instance. Find the integration by its **ManyReach** display name.
